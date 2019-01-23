@@ -1,9 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:power
-LIBS:device
 LIBS:74xx
-LIBS:audio
-LIBS:interface
 LIBS:mySensors_door_switch-cache
 EELAYER 29 0
 EELAYER END
@@ -529,9 +526,11 @@ F 3 "~" H 4150 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L tinkerforge:AGND #PWR0103
+L mySensors_door_switch-rescue:AGND-tinkerforge #PWR0103
 U 1 1 5C4EBB0F
 P 5000 3400
+AR Path="/5C4EBB0F" Ref="#PWR0103"  Part="1" 
+AR Path="/5C384508/5C4EBB0F" Ref="#PWR0103"  Part="1" 
 F 0 "#PWR0103" H 5000 3150 50  0001 C CNN
 F 1 "AGND" H 5005 3227 50  0000 C CNN
 F 2 "" H 5000 3400 50  0000 C CNN

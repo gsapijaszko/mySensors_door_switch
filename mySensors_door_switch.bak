@@ -516,17 +516,6 @@ F 3 "~" H 9950 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR018
-U 1 1 5C326C65
-P 9950 6050
-F 0 "#PWR018" H 9950 5800 50  0001 C CNN
-F 1 "GND" H 9955 5877 50  0000 C CNN
-F 2 "" H 9950 6050 50  0001 C CNN
-F 3 "" H 9950 6050 50  0001 C CNN
-	1    9950 6050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:MountingHole H5
 U 1 1 5C330200
 P 10300 5900
@@ -601,7 +590,7 @@ U 1 1 5C38A74D
 P 7600 1350
 F 0 "SW2" H 7600 1572 50  0000 C CNN
 F 1 "SW_Reed" H 7600 1481 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" H 7600 1350 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7600 1350 50  0001 C CNN
 F 3 "" H 7600 1350 50  0001 C CNN
 	1    7600 1350
 	1    0    0    -1  
@@ -795,4 +784,5 @@ NoConn ~ 6000 3000
 NoConn ~ 4800 3000
 NoConn ~ 4800 3200
 NoConn ~ 4800 3300
+NoConn ~ 9950 6050
 $EndSCHEMATC
