@@ -2433,7 +2433,7 @@
     (pad 1 thru_hole circle (at 0 0 180) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 2 GND))
     (model ${MY_3DMOD_DIR}/tactileswitch-right-angle-6mm.STEP
-      (offset (xyz 2.54 -1.5 4))
+      (offset (xyz 2.2 -1.5 4))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 -90 0))
     )
