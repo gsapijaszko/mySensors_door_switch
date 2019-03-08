@@ -1,33 +1,9 @@
 EESchema Schematic File Version 4
 LIBS:power
 LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
 LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
 LIBS:audio
 LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:mySensors_door_switch-cache
 EELAYER 29 0
 EELAYER END
@@ -217,8 +193,6 @@ $EndComp
 Connection ~ 8000 2150
 Connection ~ 8000 2550
 Wire Wire Line
-	8000 2550 7400 2550
-Wire Wire Line
 	8000 2550 8250 2550
 Wire Wire Line
 	8000 2150 8250 2150
@@ -269,18 +243,14 @@ Wire Wire Line
 	9550 3050 9550 3150
 Connection ~ 9550 3150
 Wire Wire Line
-	9550 3150 10000 3150
+	9550 3150 9950 3150
 Wire Wire Line
 	7600 2150 7600 1700
 Wire Wire Line
-	7600 1700 10000 1700
+	7600 1700 9950 1700
 Connection ~ 7600 2150
 Wire Wire Line
 	7600 2150 7400 2150
-Text Label 10000 1700 0    50   ~ 0
-LI-ION(+)
-Text Label 10000 3150 0    50   ~ 0
-LI-ION(-)
 $Comp
 L Connector:USB_B_Mini J4
 U 1 1 5C36CAE4
@@ -334,10 +304,6 @@ NoConn ~ 8250 2650
 NoConn ~ 1400 2500
 NoConn ~ 1400 2600
 NoConn ~ 1400 2700
-Text Label 1850 5700 2    50   ~ 0
-LI-ION(+)
-Text Label 1850 6200 2    50   ~ 0
-LI-ION(-)
 $Comp
 L power:+3.3V #PWR027
 U 1 1 5C483D5E
@@ -435,10 +401,7 @@ Wire Wire Line
 	4200 5700 4450 5700
 Wire Wire Line
 	4200 6000 4200 6200
-Wire Wire Line
-	1850 6200 2050 6200
 Connection ~ 4200 6200
-Connection ~ 2050 6200
 Wire Wire Line
 	2050 6200 2350 6200
 Connection ~ 2350 6200
@@ -511,30 +474,17 @@ Wire Wire Line
 Wire Wire Line
 	4150 2200 4150 2150
 Connection ~ 4150 2150
-Connection ~ 4150 2550
-Wire Wire Line
-	4150 2500 4150 2550
-Wire Wire Line
-	4150 2550 4150 3400
-Wire Wire Line
-	4150 2550 5000 2550
-Wire Wire Line
-	4150 2150 5000 2150
 $Comp
 L Connector:Conn_01x02_Female J3
 U 1 1 5C4B2441
-P 5200 2300
-F 0 "J3" H 5228 2276 50  0000 L CNN
-F 1 "BAT" H 5228 2185 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" H 5200 2300 50  0001 C CNN
-F 3 "~" H 5200 2300 50  0001 C CNN
-	1    5200 2300
+P 10150 2000
+F 0 "J3" H 10178 1976 50  0000 L CNN
+F 1 "BAT" H 10178 1885 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" H 10150 2000 50  0001 C CNN
+F 3 "~" H 10150 2000 50  0001 C CNN
+	1    10150 2000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5000 2150 5000 2300
-Wire Wire Line
-	5000 2550 5000 2400
 $Comp
 L Device:C C8
 U 1 1 5C379843
@@ -546,32 +496,46 @@ F 3 "~" H 4150 2350 50  0001 C CNN
 	1    4150 2350
 	1    0    0    -1  
 $EndComp
+Text GLabel 10000 3150 2    50   Input ~ 0
+BAT-
+Wire Wire Line
+	4150 2500 4150 3400
+Wire Wire Line
+	4150 2150 5100 2150
+Wire Wire Line
+	9950 2000 9950 1700
+Wire Wire Line
+	9950 2100 9950 3150
+Connection ~ 9950 3150
+Wire Wire Line
+	9950 3150 10000 3150
 $Comp
-L mySensors_door_switch-rescue:AGND-tinkerforge #PWR?
-U 1 1 5C4EBB0F
-P 5000 3400
-AR Path="/5C4EBB0F" Ref="#PWR?"  Part="1" 
-AR Path="/5C384508/5C4EBB0F" Ref="#PWR026"  Part="1" 
-F 0 "#PWR026" H 5000 3150 50  0001 C CNN
-F 1 "AGND" H 5005 3227 50  0000 C CNN
-F 2 "" H 5000 3400 50  0000 C CNN
-F 3 "" H 5000 3400 50  0000 C CNN
-	1    5000 3400
+L power:GND #PWR?
+U 1 1 5C8CFCCB
+P 8000 3150
+F 0 "#PWR?" H 8000 2900 50  0001 C CNN
+F 1 "GND" H 8005 2977 50  0000 C CNN
+F 2 "" H 8000 3150 50  0001 C CNN
+F 3 "" H 8000 3150 50  0001 C CNN
+	1    8000 3150
 	1    0    0    -1  
 $EndComp
-Connection ~ 5000 3400
+Connection ~ 8000 3150
+$Comp
+L power:GND #PWR?
+U 1 1 5C8D0038
+P 4500 3400
+F 0 "#PWR?" H 4500 3150 50  0001 C CNN
+F 1 "GND" H 4505 3227 50  0000 C CNN
+F 2 "" H 4500 3400 50  0001 C CNN
+F 3 "" H 4500 3400 50  0001 C CNN
+	1    4500 3400
+	1    0    0    -1  
+$EndComp
 Text GLabel 5100 2150 2    50   Input ~ 0
 BAT+
 Text GLabel 7400 2150 0    50   Input ~ 0
 BAT+
-Wire Wire Line
-	5000 2550 5100 2550
-Connection ~ 5000 2550
-Wire Wire Line
-	5000 2150 5100 2150
-Connection ~ 5000 2150
-Text GLabel 5100 2550 2    50   Input ~ 0
-BAT-
-Text GLabel 7400 2550 0    50   Input ~ 0
-BAT-
+Text GLabel 1850 5700 0    50   Input ~ 0
+BAT+
 $EndSCHEMATC
