@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 6170)
+    (start_pass_no 6206)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -107,12 +107,11 @@
   (class "kicad_default"
     /XTAL2 GND /XTAL1 /DTR "Net-(D2-Pad1)" "Net-(D3-Pad1)" "Net-(D4-Pad1)" "Net-(D5-Pad1)"
     "Net-(D6-Pad1)" "Net-(H1-Pad1)" "/PB4(MISO)" "/PB5(SCK)" "/PB3(MOSI)" "/PD0(TX)" "/PD1(RX)" "Net-(Q1-Pad1)"
-    /PD4 /PD5 /PD6 "/PB1(CE)" "/PB2(CS)" "/PD2(INT0)" "Net-(U2-Pad1)" "Net-(U2-Pad3)"
-    "Net-(U2-Pad4)" "Net-(U2-Pad5)" "Net-(U2-Pad6)" "Net-(U2-Pad7)" "Net-(U2-Pad16)" "/PD3(INT1)" "Net-(C9-Pad1)" "Net-(R14-Pad1)"
-    "Net-(C2-Pad1)" "BAT-" "Net-(C13-Pad1)" "Net-(H5-Pad1)" "Net-(Q1-Pad3)" "Net-(Q3-Pad1)" "Net-(Q3-Pad4)" "Net-(Q3-Pad5)"
-    "Net-(R12-Pad1)" "Net-(R13-Pad2)" "Net-(R15-Pad1)" "Net-(R16-Pad1)" "Net-(R18-Pad1)" "Net-(U3-Pad11)" "Net-(U3-Pad12)" "Net-(U3-Pad19)"
-    "Net-(U3-Pad20)" "Net-(U3-Pad22)" "Net-(U3-Pad25)" "Net-(U3-Pad26)" "Net-(U3-Pad27)" "Net-(U3-Pad28)" "Net-(U4-Pad4)" ADC
-    ENABLE
+    /PD4 /PD5 /PD6 "/PB1(CE)" "/PB2(CS)" "/PD2(INT0)" "/PD3(INT1)" "BAT-"
+    "Net-(C13-Pad1)" "Net-(H5-Pad1)" "Net-(Q1-Pad3)" "Net-(Q3-Pad1)" "Net-(Q3-Pad4)" "Net-(Q3-Pad5)" "Net-(R15-Pad1)" "Net-(R16-Pad1)"
+    ADC ENABLE "Net-(C6-Pad1)" /PC6 "Net-(C17-Pad1)" "Net-(R2-Pad2)" "Net-(R13-Pad1)" "Net-(R14-Pad2)"
+    "Net-(R17-Pad1)" "Net-(R19-Pad1)" "Net-(U3-Pad16)" "Net-(U3-Pad7)" "Net-(U3-Pad6)" "Net-(U3-Pad5)" "Net-(U3-Pad4)" "Net-(U3-Pad3)"
+    "Net-(U3-Pad1)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
@@ -134,7 +133,7 @@
     )
   )
   (class BATTERY
-    BAT+ "Net-(C10-Pad1)" "Net-(J4-Pad1)"
+    BAT+ "Net-(J4-Pad1)" "Net-(C14-Pad1)"
     (clearance_class BATTERY)
     (via_rule BATTERY)
     (rule
