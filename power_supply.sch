@@ -1,6 +1,9 @@
 EESchema Schematic File Version 4
 LIBS:power
+LIBS:device
 LIBS:74xx
+LIBS:audio
+LIBS:interface
 LIBS:mySensors_door_switch-cache
 EELAYER 29 0
 EELAYER END
@@ -151,7 +154,7 @@ L kicad_libraries:DW01-P U4
 U 1 1 5C379322
 P 8750 2000
 F 0 "U4" H 8900 2150 60  0000 C CNN
-F 1 "DW01-P" H 8900 2050 60  0000 C CNN
+F 1 "FS312F-G" H 8900 2050 60  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 8800 550 60  0001 C CNN
 F 3 "http://www.spectron.us/SM6FIE/Electronics/SparkFunLiIon/DW01-G-DS-10_EN.pdf" H 8750 2000 60  0001 C CNN
 	1    8750 2000
@@ -513,10 +516,10 @@ BAT-
 Wire Wire Line
 	7400 2550 7600 2550
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 5C8650E3
 P 9550 3150
-F 0 "#PWR?" H 9550 2900 50  0001 C CNN
+F 0 "#PWR0101" H 9550 2900 50  0001 C CNN
 F 1 "GND" H 9555 2977 50  0000 C CNN
 F 2 "" H 9550 3150 50  0001 C CNN
 F 3 "" H 9550 3150 50  0001 C CNN
