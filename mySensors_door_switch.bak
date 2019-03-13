@@ -1,6 +1,9 @@
 EESchema Schematic File Version 4
 LIBS:power
+LIBS:device
 LIBS:74xx
+LIBS:audio
+LIBS:interface
 LIBS:mySensors_door_switch-cache
 EELAYER 29 0
 EELAYER END
