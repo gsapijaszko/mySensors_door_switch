@@ -1,9 +1,33 @@
 EESchema Schematic File Version 4
 LIBS:power
 LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
 LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
 LIBS:audio
 LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
 LIBS:mySensors_door_switch-cache
 EELAYER 29 0
 EELAYER END
@@ -802,7 +826,7 @@ L Device:R R6
 U 1 1 5C4B12C9
 P 9850 5200
 F 0 "R6" H 9920 5246 50  0000 L CNN
-F 1 "10k" H 9920 5155 50  0000 L CNN
+F 1 "33k" H 9920 5155 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 9780 5200 50  0001 C CNN
 F 3 "~" H 9850 5200 50  0001 C CNN
 	1    9850 5200
@@ -813,7 +837,7 @@ L Device:R R7
 U 1 1 5C4B1D7E
 P 9850 5700
 F 0 "R7" H 9920 5746 50  0000 L CNN
-F 1 "33k" H 9920 5655 50  0000 L CNN
+F 1 "10k" H 9920 5655 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 9780 5700 50  0001 C CNN
 F 3 "~" H 9850 5700 50  0001 C CNN
 	1    9850 5700

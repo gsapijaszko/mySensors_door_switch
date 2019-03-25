@@ -1,9 +1,33 @@
 EESchema Schematic File Version 4
 LIBS:power
 LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
 LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
 LIBS:audio
 LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
 LIBS:mySensors_door_switch-cache
 EELAYER 29 0
 EELAYER END
@@ -325,16 +349,14 @@ $EndComp
 $Comp
 L Device:R R19
 U 1 1 5C488935
-P 2350 6050
-F 0 "R19" H 2420 6096 50  0000 L CNN
-F 1 "100k" H 2420 6005 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2280 6050 50  0001 C CNN
-F 3 "~" H 2350 6050 50  0001 C CNN
-	1    2350 6050
+P 2450 6050
+F 0 "R19" H 2520 6096 50  0000 L CNN
+F 1 "100k" H 2520 6005 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2380 6050 50  0001 C CNN
+F 3 "~" H 2450 6050 50  0001 C CNN
+	1    2450 6050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2350 5900 2650 5900
 $Comp
 L Device:C C17
 U 1 1 5C490248
@@ -383,7 +405,7 @@ Wire Wire Line
 	1850 5700 2050 5700
 Connection ~ 2050 5700
 Wire Wire Line
-	2050 5700 2650 5700
+	2050 5700 2450 5700
 Wire Wire Line
 	2050 6000 2050 6200
 Wire Wire Line
@@ -396,11 +418,6 @@ Wire Wire Line
 Wire Wire Line
 	4200 6000 4200 6200
 Connection ~ 4200 6200
-Wire Wire Line
-	2050 6200 2350 6200
-Connection ~ 2350 6200
-Wire Wire Line
-	2350 6200 3150 6200
 Connection ~ 3150 6200
 Wire Wire Line
 	3150 6200 3850 6200
@@ -539,4 +556,17 @@ Wire Wire Line
 	7600 1650 10000 1650
 Text GLabel 10000 1650 2    50   Input ~ 0
 BAT+
+Wire Wire Line
+	2450 5900 2450 5700
+Connection ~ 2450 5900
+Connection ~ 2450 5700
+Wire Wire Line
+	2450 5700 2650 5700
+Wire Wire Line
+	2450 5900 2650 5900
+Connection ~ 2450 6200
+Wire Wire Line
+	2450 6200 3150 6200
+Wire Wire Line
+	2050 6200 2450 6200
 $EndSCHEMATC

@@ -1,9 +1,33 @@
 EESchema Schematic File Version 4
 LIBS:power
 LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
 LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
 LIBS:audio
 LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
 LIBS:mySensors_door_switch-cache
 EELAYER 29 0
 EELAYER END
@@ -358,30 +382,8 @@ PD6
 $Comp
 L Mechanical:MountingHole_Pad H3
 U 1 1 5C2B47CC
-P 2550 6900
-F 0 "H3" H 2650 6949 50  0000 L CNN
-F 1 "H" H 2650 6858 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via" H 2550 6900 50  0001 C CNN
-F 3 "~" H 2550 6900 50  0001 C CNN
-	1    2550 6900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR028
-U 1 1 5C2B5312
-P 2550 7000
-F 0 "#PWR028" H 2550 6750 50  0001 C CNN
-F 1 "GND" H 2555 6827 50  0000 C CNN
-F 2 "" H 2550 7000 50  0001 C CNN
-F 3 "" H 2550 7000 50  0001 C CNN
-	1    2550 7000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H4
-U 1 1 5C32394A
 P 2900 6900
-F 0 "H4" H 3000 6949 50  0000 L CNN
+F 0 "H3" H 3000 6949 50  0000 L CNN
 F 1 "H" H 3000 6858 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via" H 2900 6900 50  0001 C CNN
 F 3 "~" H 2900 6900 50  0001 C CNN
@@ -389,10 +391,10 @@ F 3 "~" H 2900 6900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR029
-U 1 1 5C323950
+L power:GND #PWR028
+U 1 1 5C2B5312
 P 2900 7000
-F 0 "#PWR029" H 2900 6750 50  0001 C CNN
+F 0 "#PWR028" H 2900 6750 50  0001 C CNN
 F 1 "GND" H 2905 6827 50  0000 C CNN
 F 2 "" H 2900 7000 50  0001 C CNN
 F 3 "" H 2900 7000 50  0001 C CNN
@@ -400,10 +402,10 @@ F 3 "" H 2900 7000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H5
-U 1 1 5C326C5F
+L Mechanical:MountingHole_Pad H4
+U 1 1 5C32394A
 P 3200 6900
-F 0 "H5" H 3300 6949 50  0000 L CNN
+F 0 "H4" H 3300 6949 50  0000 L CNN
 F 1 "H" H 3300 6858 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via" H 3200 6900 50  0001 C CNN
 F 3 "~" H 3200 6900 50  0001 C CNN
@@ -411,14 +413,25 @@ F 3 "~" H 3200 6900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H2
-U 1 1 5C330200
-P 3550 6850
-F 0 "H2" H 3650 6896 50  0000 L CNN
-F 1 "H" H 3650 6805 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via" H 3550 6850 50  0001 C CNN
-F 3 "~" H 3550 6850 50  0001 C CNN
-	1    3550 6850
+L power:GND #PWR029
+U 1 1 5C323950
+P 3200 7000
+F 0 "#PWR029" H 3200 6750 50  0001 C CNN
+F 1 "GND" H 3205 6827 50  0000 C CNN
+F 2 "" H 3200 7000 50  0001 C CNN
+F 3 "" H 3200 7000 50  0001 C CNN
+	1    3200 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H5
+U 1 1 5C326C5F
+P 3500 6900
+F 0 "H5" H 3600 6949 50  0000 L CNN
+F 1 "H" H 3600 6858 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via" H 3500 6900 50  0001 C CNN
+F 3 "~" H 3500 6900 50  0001 C CNN
+	1    3500 6900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -659,7 +672,6 @@ NoConn ~ 4850 3300
 NoConn ~ 4850 1900
 NoConn ~ 3650 2100
 NoConn ~ 3650 2200
-NoConn ~ 3200 7000
 $Comp
 L Device:CP C1
 U 1 1 5C50186A
@@ -1102,6 +1114,39 @@ F 1 "GND" H 3155 2027 50  0000 C CNN
 F 2 "" H 3150 2200 50  0001 C CNN
 F 3 "" H 3150 2200 50  0001 C CNN
 	1    3150 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5C892FD0
+P 2600 6900
+F 0 "H2" H 2700 6949 50  0000 L CNN
+F 1 "H" H 2700 6858 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via" H 2600 6900 50  0001 C CNN
+F 3 "~" H 2600 6900 50  0001 C CNN
+	1    2600 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5C895F65
+P 3500 7000
+F 0 "#PWR0102" H 3500 6750 50  0001 C CNN
+F 1 "GND" H 3505 6827 50  0000 C CNN
+F 2 "" H 3500 7000 50  0001 C CNN
+F 3 "" H 3500 7000 50  0001 C CNN
+	1    3500 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5C89678F
+P 2600 7000
+F 0 "#PWR0103" H 2600 6750 50  0001 C CNN
+F 1 "GND" H 2605 6827 50  0000 C CNN
+F 2 "" H 2600 7000 50  0001 C CNN
+F 3 "" H 2600 7000 50  0001 C CNN
+	1    2600 7000
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
