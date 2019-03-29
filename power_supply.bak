@@ -1,9 +1,33 @@
 EESchema Schematic File Version 4
 LIBS:power
 LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
 LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
 LIBS:audio
 LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
 LIBS:mySensors_door_switch-cache
 EELAYER 29 0
 EELAYER END
@@ -11,8 +35,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
 Title "mySensors door switch"
-Date "2019-01-24"
-Rev "1.0"
+Date "2019-03-29"
+Rev "1.1"
 Comp "grzegorz@sapijaszko.net"
 Comment1 "https://github.com/gsapijaszko/mySensors_door_switch"
 Comment2 ""
@@ -185,7 +209,7 @@ U 1 1 5C38776F
 P 8000 2350
 F 0 "C13" H 8115 2396 50  0000 L CNN
 F 1 "100nF" H 8115 2305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8038 2200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8038 2200 50  0001 C CNN
 F 3 "~" H 8000 2350 50  0001 C CNN
 	1    8000 2350
 	1    0    0    -1  
@@ -325,23 +349,21 @@ $EndComp
 $Comp
 L Device:R R19
 U 1 1 5C488935
-P 2350 6050
-F 0 "R19" H 2420 6096 50  0000 L CNN
-F 1 "100k" H 2420 6005 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2280 6050 50  0001 C CNN
-F 3 "~" H 2350 6050 50  0001 C CNN
-	1    2350 6050
+P 2450 6050
+F 0 "R19" H 2520 6096 50  0000 L CNN
+F 1 "100k" H 2520 6005 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2380 6050 50  0001 C CNN
+F 3 "~" H 2450 6050 50  0001 C CNN
+	1    2450 6050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2350 5900 2650 5900
 $Comp
 L Device:C C17
 U 1 1 5C490248
 P 3850 6050
 F 0 "C17" H 3965 6096 50  0000 L CNN
 F 1 "22nF" H 3965 6005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3888 5900 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3888 5900 50  0001 C CNN
 F 3 "~" H 3850 6050 50  0001 C CNN
 	1    3850 6050
 	1    0    0    -1  
@@ -383,7 +405,7 @@ Wire Wire Line
 	1850 5700 2050 5700
 Connection ~ 2050 5700
 Wire Wire Line
-	2050 5700 2650 5700
+	2050 5700 2450 5700
 Wire Wire Line
 	2050 6000 2050 6200
 Wire Wire Line
@@ -396,11 +418,6 @@ Wire Wire Line
 Wire Wire Line
 	4200 6000 4200 6200
 Connection ~ 4200 6200
-Wire Wire Line
-	2050 6200 2350 6200
-Connection ~ 2350 6200
-Wire Wire Line
-	2350 6200 3150 6200
 Connection ~ 3150 6200
 Wire Wire Line
 	3150 6200 3850 6200
@@ -539,4 +556,17 @@ Wire Wire Line
 	7600 1650 10000 1650
 Text GLabel 10000 1650 2    50   Input ~ 0
 BAT+
+Wire Wire Line
+	2450 5900 2450 5700
+Connection ~ 2450 5900
+Connection ~ 2450 5700
+Wire Wire Line
+	2450 5700 2650 5700
+Wire Wire Line
+	2450 5900 2650 5900
+Connection ~ 2450 6200
+Wire Wire Line
+	2450 6200 3150 6200
+Wire Wire Line
+	2050 6200 2450 6200
 $EndSCHEMATC
