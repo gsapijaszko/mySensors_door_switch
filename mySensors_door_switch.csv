@@ -1,0 +1,46 @@
+Ref,Qnty,Value,Cmp name,Footprint,Description
+"C1, ",1,4.7uF,CP,Capacitor_THT:CP_Radial_D5.0mm_P2.50mm,Polarized capacitor
+"C4, C3, ",2,10uF,CP,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder,Polarized capacitor
+"C5, C8, C2, ",3,100n,C,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder,Unpolarized capacitor
+"C10, C9, ",2,22p,C,Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder,Unpolarized capacitor
+"C11, C7, C6, C13, ",4,100nF,C,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder,Unpolarized capacitor
+"C14, C12, ",2,10uF,C,Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder,Unpolarized capacitor
+"C16, C15, ",2,1uF,C,Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder,Unpolarized capacitor
+"C17, ",1,22nF,C,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder,Unpolarized capacitor
+"D1, ",1,1N4148,D,Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal,Diode
+"D2, ",1,red,LED,LED_THT:LED_D5.0mm,Light emitting diode
+"D3, ",1,green,LED,LED_THT:LED_D5.0mm,Light emitting diode
+"D4, ",1,yellow,LED,LED_THT:LED_D5.0mm,Light emitting diode
+"D5, ",1,green,LED,LED_SMD:LED_1210_3225Metric_Pad1.42x2.65mm_HandSolder,Light emitting diode
+"D6, ",1,red,LED,LED_SMD:LED_1210_3225Metric_Pad1.42x2.65mm_HandSolder,Light emitting diode
+"H1, ",1,ANT,MountingHole_Pad,Connector_Wire:SolderWirePad_1x01_Drill1.2mm,Mounting Hole with connection
+"H3, H4, H5, H2, ",4,H,MountingHole_Pad,MountingHole:MountingHole_2.7mm_M2.5_Pad_Via,Mounting Hole with connection
+"J1, ",1,FTDI,Conn_01x06_Female,Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical,"Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+"J2, ",1,AVR-ISP-6,AVR-ISP-6,Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical,Atmel 6-pin ISP connector
+"J3, ",1,BAT,Conn_01x02_Female,Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal,"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+"J4, ",1,USB_B_Mini,USB_B_Mini,Connector_USB:USB_Micro-B_Wuerth_629105150521,USB Mini Type B connector
+"Q1, ",1,Si2319CDS,Si2319CDS,Package_TO_SOT_SMD:SOT-23,"-4.4A Id, -40V Vds, P-Channel MOSFET, SOT-23"
+"Q2, ",1,2N7002,2N7002,Package_TO_SOT_SMD:TSOT-23,"0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+"Q3, ",1,FS8205A,8205,Package_SO:TSSOP-8_4.4x3mm_P0.65mm,Double N-Channel Enhancement Mode Power MOSFET
+"R1, R7, R4, ",3,10k,R,Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder,Resistor
+"R3, ",1,1M,R,Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder,Resistor
+"R5, R19, ",2,100k,R,Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder,Resistor
+"R6, ",1,33k,R,Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder,Resistor
+"R9, R2, ",2,330,R,Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder,Resistor
+"R10, R8, ",2,470,R,Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder,Resistor
+"R11, ",1,0R4,R,Resistor_SMD:R_1210_3225Metric_Pad1.42x2.65mm_HandSolder,Resistor
+"R12, ",1,100,R,Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder,Resistor
+"R13, R16, R15, ",3,1k,R,Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder,Resistor
+"R14, ",1,2k7,R,Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder,Resistor
+"R17, ",1,1k2,R,Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder,Resistor
+"R18, ",1,10k48,R,Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder,Resistor
+"SW1, ",1,SW_Reed,SW_Reed,Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical,reed switch
+"SW2, ",1,SW_Push,SW_Push,Button_Switch_THT:SW_Tactile_SKHH_Angled,"Push button switch, generic, two pins"
+"TH1, ",1,10k (25ᵒ),Thermistor_NTC,Resistor_SMD:R_1218_3246Metric_Pad1.22x4.75mm_HandSolder,"Temperature dependent resistor, negative temperature coefficient"
+"U1, ",1,NRF24L01_Breakout,NRF24L01_Breakout,RF_Module:nRF24L01_Breakout,"Ultra low power 2.4GHz RF Transceiver, Carrier PCB"
+"U2, ",1,ATmega328P-AU,ATmega328P-AU,Package_QFP:TQFP-32_7x7mm_P0.8mm,"20MHz, 32kB Flash, 2kB SRAM, 1kB EEPROM, TQFP-32"
+"U3, ",1,RFM69HW,RFM69HW,mysensors_radios:RFM69HW_SMD_ThroughHole_Handsoldering,"RFM69HW, 868Mhz +20dBm HopeRF Wireless Transceiver, Vcc=3.3V"
+"U4, ",1,FS312F-G,DW01-P,Package_TO_SOT_SMD:SOT-23-6_Handsoldering,One cell Lithium-ion/Polymer Battery Protection IC
+"U5, ",1,TP4056,TP4056,Package_SO:HSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.1mm_ThermalVias,
+"U6, ",1,RT9193-33GB,RT9193-33GB-kicad_libraries,Package_TO_SOT_SMD:SOT-23-5_HandSoldering,
+"Y1, ",1,8Mhz,Crystal,Crystal:Crystal_HC49-4H_Vertical,Two pin crystal
