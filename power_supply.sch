@@ -35,8 +35,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
 Title "mySensors door switch"
-Date "2019-01-24"
-Rev "1.0"
+Date "2019-03-29"
+Rev "1.1"
 Comp "grzegorz@sapijaszko.net"
 Comment1 "https://github.com/gsapijaszko/mySensors_door_switch"
 Comment2 ""
@@ -209,7 +209,7 @@ U 1 1 5C38776F
 P 8000 2350
 F 0 "C13" H 8115 2396 50  0000 L CNN
 F 1 "100nF" H 8115 2305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8038 2200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8038 2200 50  0001 C CNN
 F 3 "~" H 8000 2350 50  0001 C CNN
 	1    8000 2350
 	1    0    0    -1  
@@ -363,7 +363,7 @@ U 1 1 5C490248
 P 3850 6050
 F 0 "C17" H 3965 6096 50  0000 L CNN
 F 1 "22nF" H 3965 6005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3888 5900 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3888 5900 50  0001 C CNN
 F 3 "~" H 3850 6050 50  0001 C CNN
 	1    3850 6050
 	1    0    0    -1  
