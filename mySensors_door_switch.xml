@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/home/sapi/projekty/mySensors_door_switch/mySensors_door_switch.sch</source>
-    <date>sob, 30 mar 2019, 08:58:06</date>
-    <tool>Eeschema 5.1.0-unknown-2121142~94~ubuntu16.04.1</tool>
+    <source>C:\projekty\mySensors_door_switch\mySensors_door_switch.sch</source>
+    <date>2019-04-18 07:35:10</date>
+    <tool>Eeschema (6.0.0-rc1-dev-1491-g0a4812be0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>mySensors door switch</title>
@@ -33,7 +33,7 @@
   </design>
   <components>
     <comp ref="C10">
-      <value>22p</value>
+      <value>22pF</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -41,7 +41,7 @@
       <tstamp>5C0E8EEA</tstamp>
     </comp>
     <comp ref="C9">
-      <value>22p</value>
+      <value>22pF</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -89,7 +89,7 @@
       <tstamp>5C1033B0</tstamp>
     </comp>
     <comp ref="C5">
-      <value>100n</value>
+      <value>100nF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -145,7 +145,7 @@
       <tstamp>5C2BD8EE</tstamp>
     </comp>
     <comp ref="C8">
-      <value>100n</value>
+      <value>100nF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -201,7 +201,7 @@
     </comp>
     <comp ref="R9">
       <value>330</value>
-      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
@@ -243,7 +243,7 @@
       <value>2N7002</value>
       <footprint>Package_TO_SOT_SMD:TSOT-23</footprint>
       <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf</datasheet>
-      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-channel MOSFET, SOT-23"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4A863A</tstamp>
     </comp>
@@ -304,7 +304,7 @@
       <tstamp>5C855A2D</tstamp>
     </comp>
     <comp ref="C2">
-      <value>100n</value>
+      <value>100nF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
@@ -734,30 +734,24 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="MCU_Microchip_ATmega" part="ATmega48PV-10AU">
+    <libpart lib="MCU_Microchip_ATmega" part="ATmega48A-AU">
       <aliases>
-        <alias>ATmega48P-20AU</alias>
-        <alias>ATmega48A-AU</alias>
         <alias>ATmega48PA-AU</alias>
-        <alias>ATmega88PV-10AU</alias>
-        <alias>ATmega88P-20AU</alias>
         <alias>ATmega88A-AU</alias>
         <alias>ATmega88PA-AU</alias>
-        <alias>ATmega168PV-10AU</alias>
-        <alias>ATmega168P-20AU</alias>
         <alias>ATmega168A-AU</alias>
         <alias>ATmega168PA-AU</alias>
         <alias>ATmega328-AU</alias>
         <alias>ATmega328P-AU</alias>
       </aliases>
-      <description>10MHz, 4kB Flash, 512B SRAM, 256B EEPROM, TQFP-32</description>
-      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8025-8-bit-AVR-Microcontroller-ATmega48P-88P-168P_Datasheet.pdf</docs>
+      <description>20MHz, 4kB Flash, 512B SRAM, 256B EEPROM, TQFP-32</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48A_88A_168A-Data-Sheet-40002007A.pdf</docs>
       <footprints>
         <fp>TQFP*7x7mm*P0.8mm*</fp>
       </footprints>
       <fields>
         <field name="Reference">U</field>
-        <field name="Value">ATmega48PV-10AU</field>
+        <field name="Value">ATmega48A-AU</field>
         <field name="Footprint">Package_QFP:TQFP-32_7x7mm_P0.8mm</field>
       </fields>
       <pins>
@@ -833,7 +827,6 @@
     </libpart>
     <libpart lib="Switch" part="SW_Push">
       <description>Push button switch, generic, two pins</description>
-      <docs>~</docs>
       <fields>
         <field name="Reference">SW</field>
         <field name="Value">SW_Push</field>
@@ -845,7 +838,6 @@
     </libpart>
     <libpart lib="Switch" part="SW_Reed">
       <description>reed switch</description>
-      <docs>~</docs>
       <fields>
         <field name="Reference">SW</field>
         <field name="Value">SW_Reed</field>
@@ -858,66 +850,9 @@
     <libpart lib="Transistor_FET" part="BSS138">
       <aliases>
         <alias>2N7002</alias>
-        <alias>2N7002E</alias>
-        <alias>2N7002H</alias>
-        <alias>2N7002K</alias>
-        <alias>BS170F</alias>
-        <alias>BS870</alias>
-        <alias>BSN20</alias>
-        <alias>BSS123</alias>
-        <alias>BSS127S</alias>
-        <alias>DMG2302U</alias>
-        <alias>DMG3402L</alias>
-        <alias>DMG3404L</alias>
-        <alias>DMG3406L</alias>
-        <alias>DMG3414U</alias>
-        <alias>DMG3418L</alias>
-        <alias>DMN10H220L</alias>
-        <alias>DMN10H700S</alias>
-        <alias>DMN13H750S</alias>
-        <alias>DMN2041L</alias>
-        <alias>DMN2050L</alias>
-        <alias>DMN2056U</alias>
-        <alias>DMN2058U</alias>
-        <alias>DMN2075U</alias>
-        <alias>DMN2230U</alias>
-        <alias>DMN24H11DS</alias>
-        <alias>DMN24H3D5L</alias>
-        <alias>DMN3042L</alias>
-        <alias>DMN3051L</alias>
-        <alias>DMN30H4D0L</alias>
-        <alias>DMN3110S</alias>
-        <alias>DMN3150L</alias>
-        <alias>DMN3300U</alias>
-        <alias>DMN3404L</alias>
-        <alias>DMN6075S</alias>
-        <alias>DMN6140L</alias>
-        <alias>DMN67D7L</alias>
-        <alias>DMN67D8L</alias>
         <alias>MMBF170</alias>
-        <alias>VN10LF</alias>
-        <alias>ZVN3306F</alias>
-        <alias>ZVN3310F</alias>
-        <alias>ZVN3320F</alias>
-        <alias>ZVN4106F</alias>
-        <alias>ZXM61N02F</alias>
-        <alias>ZXM61N03F</alias>
-        <alias>ZXMN10A07F</alias>
-        <alias>ZXMN2A01F</alias>
-        <alias>ZXMN2A14F</alias>
-        <alias>ZXMN2B01F</alias>
-        <alias>ZXMN2B14FH</alias>
-        <alias>ZXMN2F30FH</alias>
-        <alias>ZXMN2F34FH</alias>
-        <alias>ZXMN3A01F</alias>
-        <alias>ZXMN3A14F</alias>
-        <alias>ZXMN3B01F</alias>
-        <alias>ZXMN3B14F</alias>
-        <alias>ZXMN3F30FH</alias>
-        <alias>ZXMN6A07F</alias>
-        <alias>IRLML2060</alias>
       </aliases>
-      <description>50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23</description>
+      <description>50V Vds, 0.22A Id, N-channel MOSFET, SOT-23</description>
       <docs>https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf</docs>
       <footprints>
         <fp>SOT?23*</fp>
@@ -941,9 +876,8 @@
         <alias>BSS83P</alias>
         <alias>Si2319CDS</alias>
         <alias>IRLML6402</alias>
-        <alias>DMG2301L</alias>
       </aliases>
-      <description>-0.18A Id, -60V Vds, P-Channel MOSFET, SOT-23</description>
+      <description>-0.18A Id, -60V Vds, P-Channel MOSFET, SOT-23-3</description>
       <docs>http://www.vishay.com/docs/70209/70209.pdf</docs>
       <footprints>
         <fp>SOT?23*</fp>
@@ -1060,34 +994,34 @@
   </libparts>
   <libraries>
     <library logical="Connector">
-      <uri>/usr/lib/kicad-nightly/share/kicad/library/Connector.lib</uri>
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector.lib</uri>
     </library>
     <library logical="Device">
-      <uri>/usr/lib/kicad-nightly/share/kicad/library/Device.lib</uri>
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
     </library>
     <library logical="MCU_Microchip_ATmega">
-      <uri>/usr/lib/kicad-nightly/share/kicad/library/MCU_Microchip_ATmega.lib</uri>
+      <uri>C:\Program Files\KiCad\share\kicad\library/MCU_Microchip_ATmega.lib</uri>
     </library>
     <library logical="Mechanical">
-      <uri>/usr/lib/kicad-nightly/share/kicad/library/Mechanical.lib</uri>
+      <uri>C:\Program Files\KiCad\share\kicad\library/Mechanical.lib</uri>
     </library>
     <library logical="RF">
-      <uri>/usr/lib/kicad-nightly/share/kicad/library/RF.lib</uri>
+      <uri>C:\Program Files\KiCad\share\kicad\library/RF.lib</uri>
     </library>
     <library logical="Switch">
-      <uri>/usr/lib/kicad-nightly/share/kicad/library/Switch.lib</uri>
+      <uri>C:\Program Files\KiCad\share\kicad\library/Switch.lib</uri>
     </library>
     <library logical="Transistor_FET">
-      <uri>/usr/lib/kicad-nightly/share/kicad/library/Transistor_FET.lib</uri>
+      <uri>C:\Program Files\KiCad\share\kicad\library/Transistor_FET.lib</uri>
     </library>
     <library logical="kicad_libraries">
-      <uri>/home/sapi/kicad_libraries/kicad_libraries.lib</uri>
+      <uri>C:/projekty/kicad_libraries/kicad_libraries.lib</uri>
     </library>
     <library logical="mySensors_door_switch-rescue">
-      <uri>/home/sapi/projekty/mySensors_door_switch/mySensors_door_switch-rescue.lib</uri>
+      <uri>C:\projekty\mySensors_door_switch/mySensors_door_switch-rescue.lib</uri>
     </library>
     <library logical="mysensors_radios">
-      <uri>/usr/lib/kicad-nightly/share/kicad/library/mysensors_radios.lib</uri>
+      <uri>C:\Program Files\KiCad\share\kicad\library/mysensors_radios.lib</uri>
     </library>
   </libraries>
   <nets>

@@ -1,33 +1,9 @@
 EESchema Schematic File Version 4
 LIBS:power
 LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
 LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
 LIBS:audio
 LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:mySensors_door_switch-cache
 EELAYER 29 0
 EELAYER END
@@ -35,8 +11,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
 Title "mySensors door switch"
-Date "2019-03-29"
-Rev "1.1"
+Date "2019-04-18"
+Rev "1.2"
 Comp "grzegorz@sapijaszko.net"
 Comment1 "https://github.com/gsapijaszko/mySensors_door_switch"
 Comment2 ""
@@ -56,7 +32,7 @@ L Device:C C10
 U 1 1 5C0E8EEA
 P 10700 3250
 F 0 "C10" H 10815 3296 50  0000 L CNN
-F 1 "22p" H 10815 3205 50  0000 L CNN
+F 1 "22pF" H 10815 3205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 10738 3100 50  0001 C CNN
 F 3 "~" H 10700 3250 50  0001 C CNN
 	1    10700 3250
@@ -67,7 +43,7 @@ L Device:C C9
 U 1 1 5C0E9CBE
 P 9950 3250
 F 0 "C9" H 10065 3296 50  0000 L CNN
-F 1 "22p" H 10065 3205 50  0000 L CNN
+F 1 "22pF" H 10065 3205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9988 3100 50  0001 C CNN
 F 3 "~" H 9950 3250 50  0001 C CNN
 	1    9950 3250
@@ -270,7 +246,7 @@ L Device:C C5
 U 1 1 5C223746
 P 4900 1200
 F 0 "C5" H 5015 1246 50  0000 L CNN
-F 1 "100n" H 5015 1155 50  0000 L CNN
+F 1 "100nF" H 5015 1155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4938 1050 50  0001 C CNN
 F 3 "~" H 4900 1200 50  0001 C CNN
 	1    4900 1200
@@ -461,7 +437,7 @@ L Device:C C8
 U 1 1 5C2DD439
 P 7950 2450
 F 0 "C8" H 8065 2496 50  0000 L CNN
-F 1 "100n" H 8065 2405 50  0000 L CNN
+F 1 "100nF" H 8065 2405 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7988 2300 50  0001 C CNN
 F 3 "~" H 7950 2450 50  0001 C CNN
 	1    7950 2450
@@ -739,7 +715,7 @@ U 1 1 5C27B25C
 P 5300 6200
 F 0 "R9" V 5093 6200 50  0000 C CNN
 F 1 "330" V 5184 6200 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5230 6200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 6200 50  0001 C CNN
 F 3 "~" H 5300 6200 50  0001 C CNN
 	1    5300 6200
 	0    1    1    0   
@@ -809,7 +785,7 @@ L Transistor_FET:Si2319CDS Q1
 U 1 1 5C4A9837
 P 9750 4650
 F 0 "Q1" H 9956 4604 50  0000 L CNN
-F 1 "Si2319CDS" H 9956 4695 50  0000 L CNN
+F 1 "Si2309DS" H 9956 4695 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 9950 4575 50  0001 L CIN
 F 3 "http://www.vishay.com/docs/66709/si2319cd.pdf" H 9750 4650 50  0001 L CNN
 	1    9750 4650
@@ -969,7 +945,7 @@ L Device:C C2
 U 1 1 5C855A39
 P 3700 1200
 F 0 "C2" H 3815 1246 50  0000 L CNN
-F 1 "100n" H 3815 1155 50  0000 L CNN
+F 1 "100nF" H 3815 1155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3738 1050 50  0001 C CNN
 F 3 "~" H 3700 1200 50  0001 C CNN
 	1    3700 1200
