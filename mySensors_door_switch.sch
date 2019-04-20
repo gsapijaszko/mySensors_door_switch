@@ -1,9 +1,33 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 5
 LIBS:power
 LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
 LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
 LIBS:audio
 LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
 LIBS:mySensors_door_switch-cache
 EELAYER 29 0
 EELAYER END
@@ -11,7 +35,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
 Title "mySensors door switch"
-Date "2019-04-18"
+Date "2019-04-20"
 Rev "1.2"
 Comp "grzegorz@sapijaszko.net"
 Comment1 "https://github.com/gsapijaszko/mySensors_door_switch"
@@ -775,7 +799,7 @@ U 1 1 5C4A863A
 P 9250 4950
 F 0 "Q2" H 9456 4996 50  0000 L CNN
 F 1 "2N7002" H 9456 4905 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TSOT-23" H 9450 4875 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:SuperSOT-3" H 9450 4875 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 9250 4950 50  0001 L CNN
 	1    9250 4950
 	1    0    0    -1  
@@ -907,7 +931,7 @@ F 3 "" H 8900 5250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4850 1900 5550 1900
+	4850 2900 5550 2900
 Wire Wire Line
 	4850 4300 5550 4300
 Text GLabel 8500 4250 0    50   Input ~ 0
@@ -1116,7 +1140,7 @@ Wire Notes Line
 	10500 6200 8050 6200
 Wire Notes Line
 	8050 4100 8050 6200
-Text Label 5550 1900 2    50   ~ 0
+Text Label 5550 2900 2    50   ~ 0
 ADC
 Text Label 8500 5550 0    50   ~ 0
 ADC
@@ -1124,4 +1148,6 @@ Text Label 5550 4300 2    50   ~ 0
 ENABLE
 Text Label 8500 4950 0    50   ~ 0
 ENABLE
+NoConn ~ 4850 2800
+NoConn ~ 4850 1900
 $EndSCHEMATC
