@@ -1,33 +1,6 @@
 EESchema Schematic File Version 5
 LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
 LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:mySensors_door_switch-cache
 EELAYER 29 0
 EELAYER END
@@ -357,9 +330,9 @@ Wire Wire Line
 Text Label 5550 3900 2    50   ~ 0
 PD3(INT1)
 Wire Wire Line
-	4850 4100 5550 4100
-Text Label 5550 4100 2    50   ~ 0
-PD5
+	4850 4200 5550 4200
+Text Label 5550 4200 2    50   ~ 0
+PD6
 $Comp
 L Device:Crystal Y1
 U 1 1 5C265144
@@ -372,13 +345,13 @@ F 3 "~" H 10350 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4850 4200 5550 4200
+	4850 4300 5550 4300
 Wire Wire Line
-	4850 4000 5550 4000
-Text Label 5550 4000 2    50   ~ 0
-PD4
-Text Label 5550 4200 2    50   ~ 0
-PD6
+	4850 4100 5550 4100
+Text Label 5550 4100 2    50   ~ 0
+PD5
+Text Label 5550 4300 2    50   ~ 0
+PD7
 $Comp
 L Mechanical:MountingHole_Pad H3
 U 1 1 5C2B47CC
@@ -560,7 +533,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20w
 	1    0    0    -1  
 $EndComp
 $Comp
-L mysensors_radios:RFM69HW U3
+L mySensors_door_switch-rescue:RFM69HW-mysensors_radios U3
 U 1 1 5C3AAF19
 P 1600 3850
 F 0 "U3" H 1150 3050 40  0000 C CNN
@@ -711,11 +684,11 @@ $EndComp
 Text Notes 4800 5550 0    50   ~ 0
 RADIO BLINKING DIODES
 Text Label 4850 5850 0    50   ~ 0
-PD4
-Text Label 4850 6200 0    50   ~ 0
 PD5
-Text Label 4850 6550 0    50   ~ 0
+Text Label 4850 6200 0    50   ~ 0
 PD6
+Text Label 4850 6550 0    50   ~ 0
+PD7
 Wire Wire Line
 	4850 5850 5150 5850
 Wire Wire Line
@@ -933,7 +906,7 @@ $EndComp
 Wire Wire Line
 	4850 2900 5550 2900
 Wire Wire Line
-	4850 4300 5550 4300
+	4850 1900 5550 1900
 Text GLabel 8500 4250 0    50   Input ~ 0
 BAT+
 Wire Notes Line
@@ -1144,10 +1117,9 @@ Text Label 5550 2900 2    50   ~ 0
 ADC
 Text Label 8500 5550 0    50   ~ 0
 ADC
-Text Label 5550 4300 2    50   ~ 0
+Text Label 5550 1900 2    50   ~ 0
 ENABLE
 Text Label 8500 4950 0    50   ~ 0
 ENABLE
 NoConn ~ 4850 2800
-NoConn ~ 4850 1900
 $EndSCHEMATC

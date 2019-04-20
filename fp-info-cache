@@ -1,4 +1,4 @@
-15944435197227436
+15939784277844436
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin{space}Battery{space}Holder,{space}BX0036,{space}Battery{space}Type{space}C{space}(https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -47971,13 +47971,6 @@ solder{space}jumper{space}open
 5
 3
 kicad_libraries
-1220 Battery Holder, SMD
-
-
-0
-2
-2
-kicad_libraries
 Conn_uSDcard
 
 
@@ -47991,13 +47984,6 @@ MicroSD{space}card{space}socket
 0
 13
 11
-kicad_libraries
-JST_XH2.54_1x02_P2.54mm_Horizontal
-XH2P,{space}2.54pitch
-connector{space}JST{space}XH{space}top{space}entry
-0
-2
-2
 kicad_libraries
 KF301-2P-5.0
 Terminal{space}block,{space}2{space}pole,{space}pitch{space}5{space}mm
@@ -48019,13 +48005,6 @@ LED{space}diameter{space}5.0mm{space}2{space}pins{space}diameter{space}5.0mm{spa
 0
 4
 4
-kicad_libraries
-Li-Ion battery 84x55
-
-
-0
-2
-2
 kicad_libraries
 MicroSD_TF02D
 

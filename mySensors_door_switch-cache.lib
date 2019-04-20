@@ -542,31 +542,11 @@ X ~ PAD 100 -1000 150 U 30 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# mySensors_door_switch-rescue_RT9193-33GB-kicad_libraries
+# mySensors_door_switch-rescue_RFM69HW-mysensors_radios
 #
-DEF mySensors_door_switch-rescue_RT9193-33GB-kicad_libraries U 0 40 Y Y 1 F N
-F0 "U" -300 250 50 H V L BNN
-F1 "mySensors_door_switch-rescue_RT9193-33GB-kicad_libraries" -50 250 50 H V L BNN
-F2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" 50 -300 50 H I L BNN
-F3 "" 50 -400 50 H I L BNN
-DRAW
-P 2 0 0 10 -300 -200 -300 200 N
-P 2 0 0 10 -300 200 300 200 N
-P 2 0 0 10 300 -200 -300 -200 N
-P 2 0 0 10 300 200 300 -200 N
-X VIN 1 -500 100 200 R 40 40 0 0 I
-X GND 2 0 -400 200 U 40 40 0 0 W
-X EN 3 -500 -100 200 R 40 40 0 0 I
-X BP 4 500 -100 200 L 40 40 0 0 P
-X VOUT 5 500 100 200 L 40 40 0 0 O
-ENDDRAW
-ENDDEF
-#
-# mysensors_radios_RFM69HW
-#
-DEF mysensors_radios_RFM69HW U 0 40 Y Y 1 F N
+DEF mySensors_door_switch-rescue_RFM69HW-mysensors_radios U 0 40 Y Y 1 F N
 F0 "U" -350 250 40 H V C CNN
-F1 "mysensors_radios_RFM69HW" 250 -750 40 H V C CNN
+F1 "mySensors_door_switch-rescue_RFM69HW-mysensors_radios" 250 -750 40 H V C CNN
 F2 "mysensors_radios:RFM69HW_SMD_ThroughHole_Handsoldering" 0 0 30 H I C CIN
 F3 "" 0 0 60 H V C CNN
 $FPLIST
@@ -590,6 +570,26 @@ X DIO4 6 550 -400 150 L 40 40 1 1 B
 X DIO5 7 550 -500 150 L 40 40 1 1 B
 X 3.3V 8 0 350 150 D 40 40 1 1 W
 X GND 9 -100 -850 150 U 40 40 1 1 W
+ENDDRAW
+ENDDEF
+#
+# mySensors_door_switch-rescue_RT9193-33GB-kicad_libraries
+#
+DEF mySensors_door_switch-rescue_RT9193-33GB-kicad_libraries U 0 40 Y Y 1 F N
+F0 "U" -300 250 50 H V L BNN
+F1 "mySensors_door_switch-rescue_RT9193-33GB-kicad_libraries" -50 250 50 H V L BNN
+F2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" 50 -300 50 H I L BNN
+F3 "" 50 -400 50 H I L BNN
+DRAW
+P 2 0 0 10 -300 -200 -300 200 N
+P 2 0 0 10 -300 200 300 200 N
+P 2 0 0 10 300 -200 -300 -200 N
+P 2 0 0 10 300 200 300 -200 N
+X VIN 1 -500 100 200 R 40 40 0 0 I
+X GND 2 0 -400 200 U 40 40 0 0 W
+X EN 3 -500 -100 200 R 40 40 0 0 I
+X BP 4 500 -100 200 L 40 40 0 0 P
+X VOUT 5 500 100 200 L 40 40 0 0 O
 ENDDRAW
 ENDDEF
 #
