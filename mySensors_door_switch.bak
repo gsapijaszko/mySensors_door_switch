@@ -1,8 +1,11 @@
 EESchema Schematic File Version 4
 LIBS:power
+LIBS:device
 LIBS:74xx
+LIBS:audio
+LIBS:interface
 LIBS:mySensors_door_switch-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -307,8 +310,6 @@ Wire Wire Line
 	2100 1850 2550 1850
 Wire Wire Line
 	2100 2050 2550 2050
-Wire Wire Line
-	2100 2150 2550 2150
 Text Label 2550 2050 2    50   ~ 0
 PB1(CE)
 Text Label 5550 2100 2    50   ~ 0
@@ -323,16 +324,14 @@ Text Label 2550 1550 2    50   ~ 0
 PB3(MOSI)
 Text Label 5550 3800 2    50   ~ 0
 PD2(INT0)
-Text Label 2550 2150 2    50   ~ 0
-PD2(INT0)
 Wire Wire Line
 	4850 3900 5550 3900
 Text Label 5550 3900 2    50   ~ 0
 PD3(INT1)
 Wire Wire Line
-	4850 4100 5550 4100
-Text Label 5550 4100 2    50   ~ 0
-PD5
+	4850 4200 5550 4200
+Text Label 5550 4200 2    50   ~ 0
+PD6
 $Comp
 L Device:Crystal Y1
 U 1 1 5C265144
@@ -345,13 +344,13 @@ F 3 "~" H 10350 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4850 4200 5550 4200
+	4850 4300 5550 4300
 Wire Wire Line
-	4850 4000 5550 4000
-Text Label 5550 4000 2    50   ~ 0
-PD4
-Text Label 5550 4200 2    50   ~ 0
-PD6
+	4850 4100 5550 4100
+Text Label 5550 4100 2    50   ~ 0
+PD5
+Text Label 5550 4300 2    50   ~ 0
+PD7
 $Comp
 L Mechanical:MountingHole_Pad H3
 U 1 1 5C2B47CC
@@ -463,31 +462,31 @@ $EndSheet
 $Comp
 L Switch:SW_Reed SW1
 U 1 1 5C38A74D
-P 8950 1100
-F 0 "SW1" H 8950 1322 50  0000 C CNN
-F 1 "SW_Reed" H 8950 1231 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 8950 1100 50  0001 C CNN
-F 3 "" H 8950 1100 50  0001 C CNN
-	1    8950 1100
+P 9050 800
+F 0 "SW1" H 9050 1022 50  0000 C CNN
+F 1 "SW_Reed" H 9050 931 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 9050 800 50  0001 C CNN
+F 3 "" H 9050 800 50  0001 C CNN
+	1    9050 800 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8750 1100 8300 1100
+	8850 800  8400 800 
 $Comp
 L power:GND #PWR03
 U 1 1 5C38E032
-P 9300 1100
-F 0 "#PWR03" H 9300 850 50  0001 C CNN
-F 1 "GND" H 9305 927 50  0000 C CNN
-F 2 "" H 9300 1100 50  0001 C CNN
-F 3 "" H 9300 1100 50  0001 C CNN
-	1    9300 1100
+P 9400 800
+F 0 "#PWR03" H 9400 550 50  0001 C CNN
+F 1 "GND" H 9405 627 50  0000 C CNN
+F 2 "" H 9400 800 50  0001 C CNN
+F 3 "" H 9400 800 50  0001 C CNN
+	1    9400 800 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9150 1100 9300 1100
-Text Label 8300 1100 0    50   ~ 0
-PD3(INT1)
+	9250 800  9400 800 
+Text Label 8400 800  0    50   ~ 0
+PD2(INT0)
 $Comp
 L power:+3.3V #PWR011
 U 1 1 5C3963A8
@@ -582,10 +581,6 @@ Text Label 2700 4100 2    50   ~ 0
 PB4(MISO)
 Text Label 2700 4200 2    50   ~ 0
 PB5(SCK)
-Wire Wire Line
-	1050 3850 650  3850
-Text Label 650  3850 0    50   ~ 0
-PD2(INT0)
 Wire Wire Line
 	2150 3700 2550 3700
 $Comp
@@ -684,11 +679,11 @@ $EndComp
 Text Notes 4800 5550 0    50   ~ 0
 RADIO BLINKING DIODES
 Text Label 4850 5850 0    50   ~ 0
-PD4
-Text Label 4850 6200 0    50   ~ 0
 PD5
-Text Label 4850 6550 0    50   ~ 0
+Text Label 4850 6200 0    50   ~ 0
 PD6
+Text Label 4850 6550 0    50   ~ 0
+PD7
 Wire Wire Line
 	4850 5850 5150 5850
 Wire Wire Line
@@ -984,7 +979,7 @@ U 1 1 5C882347
 P 7400 2550
 F 0 "R2" H 7470 2596 50  0000 L CNN
 F 1 "330" H 7470 2505 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7330 2550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7330 2550 50  0001 C CNN
 F 3 "~" H 7400 2550 50  0001 C CNN
 	1    7400 2550
 	1    0    0    -1  
@@ -1122,4 +1117,34 @@ ENABLE
 Text Label 8500 4950 0    50   ~ 0
 ENABLE
 NoConn ~ 4850 2800
+$Comp
+L Switch:SW_Reed SW3
+U 1 1 5CC285E8
+P 9050 1150
+F 0 "SW3" H 9050 1372 50  0000 C CNN
+F 1 "SW_Reed" H 9050 1281 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 9050 1150 50  0001 C CNN
+F 3 "" H 9050 1150 50  0001 C CNN
+	1    9050 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 1150 8400 1150
+$Comp
+L power:GND #PWR0104
+U 1 1 5CC285EF
+P 9400 1150
+F 0 "#PWR0104" H 9400 900 50  0001 C CNN
+F 1 "GND" H 9405 977 50  0000 C CNN
+F 2 "" H 9400 1150 50  0001 C CNN
+F 3 "" H 9400 1150 50  0001 C CNN
+	1    9400 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 1150 9400 1150
+Text Label 8400 1150 0    50   ~ 0
+PD3(INT1)
+NoConn ~ 2100 2150
+NoConn ~ 1050 3850
 $EndSCHEMATC

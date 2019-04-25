@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 6206)
+    (start_pass_no 3812)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -26,9 +26,9 @@
     )
   )
   (rule
-    (width 279.4)
+    (width 304.8)
     (clear 220.2)
-    (clear 139.7 (type smd_to_turn_gap))
+    (clear 152.4 (type smd_to_turn_gap))
     (clear 300.2 (type default_3V3))
     (clear 300.2 (type default_BATTERY))
     (clear 55.0 (type smd_smd))
@@ -39,6 +39,15 @@
     (clear 300.2 (type 3V3_3V3))
     (clear 300.2 (type 3V3_BATTERY))
     (clear 300.2 (type BATTERY_BATTERY))
+  )
+  (padstack "Via[0-1]_1000:500_um"
+    (shape
+      (circle F.Cu 1000.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1000.0 0.0 0.0)
+    )
+    (attach off)
   )
   (padstack "Via[0-1]_800:400_um"
     (shape
@@ -59,10 +68,16 @@
     (attach off)
   )
   (via 
+    "Via[0-1]_1000:500_um" "Via[0-1]_1000:500_um" default
+  )
+  (via 
     "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
   )
   (via 
     "Via[0-1]_1200:600_um" "Via[0-1]_1200:600_um" default
+  )
+  (via 
+    "Via[0-1]_1000:500_um-kicad_default" "Via[0-1]_1000:500_um" "kicad_default"
   )
   (via 
     "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
@@ -71,10 +86,16 @@
     "Via[0-1]_1200:600_um-kicad_default" "Via[0-1]_1200:600_um" "kicad_default"
   )
   (via 
+    "Via[0-1]_1000:500_um-3V3" "Via[0-1]_1000:500_um" 3V3
+  )
+  (via 
     "Via[0-1]_800:400_um-3V3" "Via[0-1]_800:400_um" 3V3
   )
   (via 
     "Via[0-1]_1200:600_um-3V3" "Via[0-1]_1200:600_um" 3V3
+  )
+  (via 
+    "Via[0-1]_1000:500_um-BATTERY" "Via[0-1]_1000:500_um" BATTERY
   )
   (via 
     "Via[0-1]_800:400_um-BATTERY" "Via[0-1]_800:400_um" BATTERY
@@ -86,7 +107,7 @@
     default "Via[0-1]_800:400_um"
   )
   (via_rule
-    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+    "kicad_default" "Via[0-1]_1000:500_um-kicad_default"
   )
   (via_rule
     3V3 "Via[0-1]_800:400_um-3V3"
@@ -98,7 +119,7 @@
     (clearance_class default)
     (via_rule default)
     (rule
-      (width 279.4)
+      (width 304.8)
     )
     (circuit 
       (use_layer F.Cu B.Cu)
@@ -107,15 +128,14 @@
   (class "kicad_default"
     /XTAL2 GND /XTAL1 /DTR "Net-(D2-Pad1)" "Net-(D3-Pad1)" "Net-(D4-Pad1)" "Net-(D5-Pad1)"
     "Net-(D6-Pad1)" "Net-(H1-Pad1)" "/PB4(MISO)" "/PB5(SCK)" "/PB3(MOSI)" "/PD0(TX)" "/PD1(RX)" "Net-(Q1-Pad1)"
-    /PD4 /PD5 /PD6 "/PB1(CE)" "/PB2(CS)" "/PD2(INT0)" "/PD3(INT1)" "BAT-"
-    "Net-(C13-Pad1)" "Net-(H5-Pad1)" "Net-(Q1-Pad3)" "Net-(Q3-Pad1)" "Net-(Q3-Pad4)" "Net-(Q3-Pad5)" "Net-(R15-Pad1)" "Net-(R16-Pad1)"
-    ADC ENABLE "Net-(C6-Pad1)" /PC6 "Net-(C17-Pad1)" "Net-(R2-Pad2)" "Net-(R13-Pad1)" "Net-(R14-Pad2)"
-    "Net-(R17-Pad1)" "Net-(R19-Pad1)" "Net-(U3-Pad16)" "Net-(U3-Pad7)" "Net-(U3-Pad6)" "Net-(U3-Pad5)" "Net-(U3-Pad4)" "Net-(U3-Pad3)"
-    "Net-(U3-Pad1)"
+    /PD5 /PD6 "/PB1(CE)" "/PB2(CS)" "/PD2(INT0)" "/PD3(INT1)" "BAT-" "Net-(C13-Pad1)"
+    "Net-(Q1-Pad3)" "Net-(Q3-Pad1)" "Net-(Q3-Pad4)" "Net-(Q3-Pad5)" "Net-(R15-Pad1)" "Net-(R16-Pad1)" "Net-(C6-Pad1)" /PC6
+    "Net-(C17-Pad1)" "Net-(R2-Pad2)" "Net-(R13-Pad1)" "Net-(R14-Pad2)" "Net-(R17-Pad1)" "Net-(U3-Pad16)" "Net-(U3-Pad7)" "Net-(U3-Pad6)"
+    "Net-(U3-Pad5)" "Net-(U3-Pad4)" "Net-(U3-Pad3)" "Net-(U3-Pad1)" /ADC /ENABLE /PD7 "Net-(U3-Pad2)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
-      (width 279.4)
+      (width 304.8)
     )
     (circuit 
       (use_layer F.Cu B.Cu)

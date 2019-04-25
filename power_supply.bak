@@ -1,8 +1,11 @@
 EESchema Schematic File Version 4
 LIBS:power
+LIBS:device
 LIBS:74xx
+LIBS:audio
+LIBS:interface
 LIBS:mySensors_door_switch-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -409,7 +412,7 @@ U 1 1 5C37A5FB
 P 4500 3250
 F 0 "R18" H 4570 3296 50  0000 L CNN
 F 1 "10k48" H 4570 3205 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4430 3250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4430 3250 50  0001 C CNN
 F 3 "~" H 4500 3250 50  0001 C CNN
 	1    4500 3250
 	1    0    0    -1  
@@ -464,7 +467,7 @@ U 1 1 5C4B2441
 P 7400 2300
 F 0 "J3" H 7428 2276 50  0000 L CNN
 F 1 "BAT" H 7428 2185 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" H 7400 2300 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_S02B-XH-A_1x02_P2.50mm_Horizontal" H 7400 2300 50  0001 C CNN
 F 3 "~" H 7400 2300 50  0001 C CNN
 	1    7400 2300
 	-1   0    0    -1  
