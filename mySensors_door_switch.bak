@@ -11,7 +11,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
 Title "mySensors door switch"
-Date "2019-04-20"
+Date "2019-04-25"
 Rev "1.2"
 Comp "grzegorz@sapijaszko.net"
 Comment1 "https://github.com/gsapijaszko/mySensors_door_switch"
