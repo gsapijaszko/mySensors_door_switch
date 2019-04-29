@@ -486,7 +486,7 @@ $EndComp
 Wire Wire Line
 	9250 800  9400 800 
 Text Label 8400 800  0    50   ~ 0
-PD2(INT0)
+PD3(INT1)
 $Comp
 L power:+3.3V #PWR011
 U 1 1 5C3963A8
@@ -1144,7 +1144,17 @@ $EndComp
 Wire Wire Line
 	9250 1150 9400 1150
 Text Label 8400 1150 0    50   ~ 0
-PD3(INT1)
-NoConn ~ 2100 2150
-NoConn ~ 1050 3850
+PD4
+Wire Wire Line
+	2100 2150 2550 2150
+Text Label 2550 2150 2    50   ~ 0
+PD2(INT0)
+Text Label 650  3850 0    50   ~ 0
+PD2(INT0)
+Wire Wire Line
+	650  3850 1050 3850
+Wire Wire Line
+	4850 4000 5550 4000
+Text Label 5550 4000 2    50   ~ 0
+PD4
 $EndSCHEMATC

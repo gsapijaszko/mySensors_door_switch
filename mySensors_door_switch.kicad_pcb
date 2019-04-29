@@ -12,7 +12,7 @@
   (page A4)
   (title_block
     (title "mySensors door switch")
-    (date 2019-04-25)
+    (date 2019-04-29)
     (rev 1.2)
     (company grzegorz@sapijaszko.net)
     (comment 1 https://github.com/gsapijaszko/mySensors_door_switch)
@@ -3455,7 +3455,7 @@
       (xy -2.620173 1.933271) (xy -2.53664 1.952468)) (layer F.SilkS) (width 0.01))
   )
 
-  (gr_text "v.1.2\n2019-04-25" (at 170.815 102.616) (layer F.SilkS) (tstamp 5C4EA9EB)
+  (gr_text "v.1.2\n2019-04-29" (at 170.815 102.616) (layer F.SilkS) (tstamp 5C4EA9EB)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text 1 (at 151.3205 94.4245) (layer F.SilkS) (tstamp 5C83BD70)
